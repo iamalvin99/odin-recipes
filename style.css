@@ -1,10 +1,10 @@
 * {
     margin: 0px;
     padding: 0px;
+
 }
 
 body {
-    margin: 20px;
     background-color: salmon;
 }
 
@@ -13,17 +13,17 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 50px;
     color:beige;
+    border:3px solid black;
+    padding: 30px;
+    margin: 30px 20px;
 }
 
 .recipe-list {
-    text-align: center;
-    list-style-type: none;
-    justify-content: center;
- 
-
+    margin: 10px;
 }
 
-.recipe-list a {
+.item a {
+    text-align: center;
     font-size: 18px;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
@@ -31,20 +31,34 @@ body {
     display: block;
 }
 
-.recipe-list li {
-    
-    background-color:cadetblue;
-    width: fit-content;
-    border:0.2px solid black;
-    margin: 20px;
+.item img {
+    border: 2px solid black;
+    height: 150px;
+    width: 150px;
+}
+
+.item {
+    display: inline-block;
+    border:3px solid black;
+    margin: 10px;
     padding: 10px;
     width: auto;
 }
 
-.recipe-list li:hover {
+.item:hover {
     background-color: beige;
 }
 
-.recipe-list li:active {
+.item:active {
     background-color: bisque;
+}
+
+.footer {
+    padding: 5px;
+    position: fixed;
+    background-color: black;
+    text-align: center;
+    color: white;
+    width: 100%;
+    bottom: 0;
 }
